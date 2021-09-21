@@ -1,0 +1,71 @@
+main
+{
+    width: 960px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 400px 200px 50px;
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    grid-template-areas:
+    "header . nav nav"
+    "title title title title"
+    "product1 product1 product2 product2"
+    "footer footer footer footer";
+}
+
+.item1, .item2, a, header, section, div, footer
+{
+    background: silver;
+}
+ul
+{
+    list-style-type: none;
+    display: grid;
+    padding: 0px;
+    margin: 0px;
+    background: silver;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-gap: 25px;
+    justify-items: center;
+    align-items: center;
+}
+li
+{
+    justify-items: center;
+    align-items: center;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+nav
+{
+    grid-area: nav;
+    align-self: center;
+}
+header
+{
+    grid-area: header;
+}
+.item1
+{
+    grid-area: product1;
+}
+.item2
+{
+    grid-area: product2;
+}
+section
+{
+    grid-area: title;
+}
+footer
+{
+    grid-area: footer;
+}
+p{
+    text-align: center;
+}
